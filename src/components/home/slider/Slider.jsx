@@ -14,14 +14,19 @@ const SliderComponent = ({heading,cards}) => {
         infinite: true,
         speed: 500,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 1,
         initialSlide: 0,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 4000,
+        cssEase: "linear",
+        pauseOnHover: true,
         responsive: [
           {
             breakpoint: 1024,
             settings: {
               slidesToShow: 3,
-              slidesToScroll: 3,
+              slidesToScroll: 1,
               infinite: true,
               dots: true
             }
@@ -30,7 +35,7 @@ const SliderComponent = ({heading,cards}) => {
             breakpoint: 600,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 2,
+              slidesToScroll: 1,
               initialSlide: 2
             }
           },
@@ -49,7 +54,7 @@ const SliderComponent = ({heading,cards}) => {
       <h1 className={styles.heading}>
         {heading}
       </h1>
-      <Slider {...settings}>
+      <Slider {...settings} className={styles.cardsSection}>
         {
           cards?.map((card,index)=>(
             <Card key={index} img={card.img} title={card.title} description={card.description}/>

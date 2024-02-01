@@ -1,17 +1,24 @@
+.slick-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .slick-slider .slick-track, .slick-slider .slick-list{
-    height: 15em;
+    height: 20em;
     margin-top: 1em;
+    width: 98%;
+    
 }
 
 .slick-next,.slick-prev{
-    right: -10px;
+    right: -12px;
     top: 50%;
     z-index: 10;
     width: 50px;
     height: 30px;
 }
 .slick-prev{
-    left: -10px;
+    left: -12px;
     top: 50%;
     z-index: 10;
     width: 50px;
