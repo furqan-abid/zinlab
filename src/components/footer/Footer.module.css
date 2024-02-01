@@ -42,6 +42,7 @@ align-items: center;
     color: var(--darkGray);
 }
 .footerBottom{
+    height: 25%;
     min-height: 15vh;
     display: flex;
     justify-content: space-between;
@@ -56,6 +57,7 @@ align-items: center;
 flex-wrap: wrap;
 color: var(--darkGray);
 min-width: 15em;
+height: 5em;
 }
 .content p{
     font-size: clamp(0.9em,1.3vw,2em);
@@ -63,6 +65,11 @@ min-width: 15em;
     font-weight: bold;
     color: var(--black);
     min-width: 5em;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .content ul{
     display: flex;
@@ -75,7 +82,7 @@ min-width: 15em;
     font-size: clamp(0.5em,1vw,1em);
 }
 .content ul li{
-    min-width: 8em;
+    min-width: 8em;;
 }
 .content p span{
     background-color: var(--black);
@@ -83,6 +90,7 @@ min-width: 15em;
     border-radius: 10px;
     padding: 0.3em 0.6em;
     font-size: clamp(0.7em,1vw,1.5em);
+    margin-left: 0.2em;
 }
 .moon{
     /* padding: 1em; */
