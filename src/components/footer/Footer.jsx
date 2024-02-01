@@ -3,10 +3,10 @@ import styles from "./Footer.module.css";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 
-const Footer = () => {
-  const list = [
+
+const list = [
     "Privacy Policy",
     "Terms and Conditions",
     "Cookies Policy",
@@ -17,52 +17,43 @@ const Footer = () => {
 
   const footerLinks = [
     {
-        heading:"Internal Links",
-        list:[
-            "Documentaries",
-            "Themes",
-            "Chrom Casts"
-        ]
+      heading: "Internal Links",
+      list: ["Documentaries", "Themes", "Chrom Casts"],
     },
     {
-        heading:"Enterprise",
-        list:[
-            "Download Chrome Browser",
-            "Chrome Browser for Enterprise",
-            "Chrome Browser Devices",
-            "ChromeOS",
-            "Google Cloud",
-            "Google Workspace"
-        ]
+      heading: "Enterprise",
+      list: [
+        "Download Chrome Browser",
+        "Chrome Browser for Enterprise",
+        "Chrome Browser Devices",
+        "ChromeOS",
+        "Google Cloud",
+        "Google Workspace",
+      ],
     },
     {
-        heading:"Internal Links",
-        list:[
-            "Documentaries",
-            "Themes",
-            "Chrom Casts"
-        ]
+      heading: "Internal Links",
+      list: ["Documentaries", "Themes", "Chrom Casts"],
     },
     {
-        heading:"Enterprise",
-        list:[
-            "Download Chrome Browser",
-            "Chrome Browser for Enterprise",
-            "Chrome Browser Devices",
-            "ChromeOS",
-            "Google Cloud",
-            "Google Workspace"
-        ]
+      heading: "Enterprise",
+      list: [
+        "Download Chrome Browser",
+        "Chrome Browser for Enterprise",
+        "Chrome Browser Devices",
+        "ChromeOS",
+        "Google Cloud",
+        "Google Workspace",
+      ],
     },
     {
-        heading:"Internal Links",
-        list:[
-            "Documentaries",
-            "Themes",
-            "Chrom Casts"
-        ]
+      heading: "Internal Links",
+      list: ["Documentaries", "Themes", "Chrom Casts"],
     },
-  ]
+  ];
+
+  
+const Footer = () => {
 
   return (
     <footer className={styles.footer}>
@@ -75,16 +66,16 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerMid}>
-        {
-            footerLinks.map((fl,index)=>((
-                <div  key={index} className={styles.linkContainer}>
-                    <h3>{fl.heading}</h3>
-                    <ul>
-                        {fl.list.map(l=><li key={l}>{l}</li>)}
-                    </ul>
-                </div>
-            )))
-        }
+        {footerLinks.map((fl, index) => (
+          <div key={index} className={styles.linkContainer}>
+            <h3>{fl.heading}</h3>
+            <ul>
+              {fl.list.map((l) => (
+                <li key={l}>{l}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
       <div className={styles.footerBottom}>
         <div className={styles.content}>
@@ -98,7 +89,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.moon}>
-            <DarkModeOutlinedIcon/>
+          <DarkModeOutlinedIcon />
         </div>
       </div>
     </footer>
