@@ -1,0 +1,16 @@
+.section{
+    display: flex;
+    width: 80%;
+    display: fl;
+    flex-direction: column;
+    min-height: 15em;
+    margin: 1em 0;
+}
+
+.cardsSection{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+

@@ -1,0 +1,30 @@
+.slick-slider .slick-track, .slick-slider .slick-list{
+    height: 15em;
+    margin-top: 1em;
+}
+
+.slick-next,.slick-prev{
+    right: -10px;
+    top: 50%;
+    z-index: 10;
+    width: 50px;
+    height: 30px;
+}
+.slick-prev{
+    left: -10px;
+    top: 50%;
+    z-index: 10;
+    width: 50px;
+    height: 30px;
+}
+
+.slick-next:before,.slick-prev:before{
+    color: black;
+    font-size: 30px;
+}
+
+.slick-dots{
+    bottom: 0;
+    display: none;
+    opacity: 0;
+}
