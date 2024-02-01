@@ -1,0 +1,17 @@
+.footer{
+    background-color: var(--gray);
+    min-height: 60vh;
+}
+
+.footerTop{
+height: 20%;
+border-bottom: 2px solid var(--darkGray);
+}
+
+.footerMid{
+
+}
+
+.footerBottom{
+
+}
