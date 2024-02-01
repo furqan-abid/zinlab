@@ -6,6 +6,8 @@
 
 :root {
   --gray: rgb(230, 230, 230);
-  --darkGray:rgba(226, 226, 226);
+  --medGray:rgb(205, 204, 204);
+  --darkGray:rgb(66, 66, 66);
   --white: #ffffff; 
+  --black: black;
 }
