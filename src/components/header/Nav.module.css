@@ -13,8 +13,9 @@
     justify-content: space-around;
     list-style: none;
     color: var(--black);
-    font-size: clamp(0.8em,0.9vw,2em);
+    font-size: clamp(0.5em,0.9vw,2em);
 }
 .menu li{
-    margin-top: 1em;
+    margin-top: 0.5em;
+    cursor: pointer;
 }
